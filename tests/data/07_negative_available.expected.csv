@@ -1,0 +1,7 @@
+# Client 1: 10 - 8 = 2 available. Disputing the spent 10 gives available -8,
+#   held 10, total 2 (total is unchanged by a dispute).
+# Client 2: same, then a chargeback removes the held 10: available -8, held 0,
+#   total -8, locked. Negative balances are allowed.
+client,available,held,total,locked
+1,-8,10,2,false
+2,-8,0,-8,true
